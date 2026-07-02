@@ -382,7 +382,7 @@ export async function POST(request: NextRequest) {
         longTermOutlook: result.longTermOutlook || "",
         bullCase: result.bullCase || "",
         bearCase: result.bearCase || "",
-        investmentRecommendation: result.investmentRecommendation || result.recommendation || "",
+        investmentRecommendation:result.investmentRecommendation || "",
         confidence: Math.min(100, Math.max(0, Number(result.confidence) || 0)),
         score: Math.min(10, Math.max(0, Number(result.score) || 0)),
       },
